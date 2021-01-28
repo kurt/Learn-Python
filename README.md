@@ -21,3 +21,7 @@ Dev is on Windows 10 using the Python 3.8 Console from Microsoft Windows Store.
 
 - https://www.holbertonschool.com/coding-concept-what-is-object-oriented-programming
 - https://pythonschool.net/category/oop.html
+
+## Misc
+
+- How I installed numpy: "sudo apt-get install python3-numpy "
