@@ -25,3 +25,4 @@ Dev is on Windows 10 using the Python 3.8 Console from Microsoft Windows Store.
 ## Misc
 
 - How I installed numpy: "sudo apt-get install python3-numpy "
+- Note I am using python2.7 currently as I could not get stuff to work with python3 - I may need to get rid of python3 and reinstall it
