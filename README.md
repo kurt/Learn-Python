@@ -16,7 +16,7 @@ Just some code that I am developing as I learn Python. It includes:
 - Class abstraction
 - Class polymorphism
 - Tutorials Point Python 3 
-- Tuple loops and Tuples
+  - generators and iterators
 
 ## Setup
 
