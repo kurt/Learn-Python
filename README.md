@@ -4,6 +4,9 @@ Just some code that I am developing as I learn Python. It includes:
 
 - Basic Class
 - Class inheritance 
+- edx_Course: loops, strings, lists, dictionaries, input/output, and tuples
+- Plotting
+- Basic Scipy and Numpy
 
 
 
@@ -12,6 +15,8 @@ Just some code that I am developing as I learn Python. It includes:
 - Class encapsulation
 - Class abstraction
 - Class polymorphism
+- Tutorials Point Python 3 
+- Tuple loops and Tuples
 
 ## Setup
 
