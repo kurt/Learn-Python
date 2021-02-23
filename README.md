@@ -6,6 +6,7 @@ Just some code that I am developing as I learn Python. It includes:
 - Class inheritance 
 - edx_Course: loops, strings, lists, dictionaries, input/output, and tuples
 - Plotting
+- TutorialsPoint up to Classes/Objects
 - Basic Scipy and Numpy
 
 
@@ -22,6 +23,8 @@ Just some code that I am developing as I learn Python. It includes:
 
 Dev is on Windows 10 using the Python 3.8 Console from Microsoft Windows Store. 
 
+- now is on linux VM
+
 ## Resources
 
 - https://www.holbertonschool.com/coding-concept-what-is-object-oriented-programming
@@ -30,4 +33,4 @@ Dev is on Windows 10 using the Python 3.8 Console from Microsoft Windows Store.
 ## Misc
 
 - How I installed numpy: "sudo apt-get install python3-numpy "
-- Note I am using python2.7 currently as I could not get stuff to work with python3 - I may need to get rid of python3 and reinstall it
+- currently running everything through "*python3 script.p*y*"
