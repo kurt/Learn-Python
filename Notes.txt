@@ -9,4 +9,6 @@ id() - universal identifier of python object. Similar to pointer in C
 Change in shape one will make a change in the other (view)
 
 See example in NumPy/copies_and_views.py
+- slicing an array creates a view
+
 
