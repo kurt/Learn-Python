@@ -1,0 +1,12 @@
+
+Functions return: a copy of array or the view
+
+Copy: when the contents are physically stored in another location
+View: A different view of the the same memory
+
+id() - universal identifier of python object. Similar to pointer in C
+
+Change in shape one will make a change in the other (view)
+
+See example in NumPy/copies_and_views.py
+
