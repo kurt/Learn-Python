@@ -6,8 +6,8 @@ Just some code that I am developing as I learn Python. It includes:
 - Class inheritance 
 - edx_Course: loops, strings, lists, dictionaries, input/output, and tuples
 - Plotting
-- TutorialsPoint up to Classes/Objects
-- Basic Scipy and Numpy
+- TutorialsPoint tutorials
+- Basic Scipy and Numpy - as introduced in TutorialsPoint
 
 
 
@@ -16,7 +16,7 @@ Just some code that I am developing as I learn Python. It includes:
 - Class encapsulation
 - Class abstraction
 - Class polymorphism
-- Tutorials Point Python 3 
+- TutorialsPoint Python 3 
   - generators and iterators
 
 ## Setup
