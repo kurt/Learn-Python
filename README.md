@@ -3,21 +3,18 @@
 Just some code that I am developing as I learn Python. It includes:
 
 - Basic Class
-- Class inheritance 
+- OOP: Class inheritance, polymorphism,  encapsulation, abstraction
 - edx_Course: loops, strings, lists, dictionaries, input/output, and tuples
-- Plotting
-- TutorialsPoint tutorials
+- NumPy and SciPy: plotting, arrays etc
+- TutorialsPoint tutorials: threads, data structures, 
 - Basic Scipy and Numpy - as introduced in TutorialsPoint
+- Unit Testing
 
 
 
 ## To Do List
 
-- Class encapsulation
-- Class abstraction
-- Class polymorphism
-- TutorialsPoint Python 3 
-  - generators and iterators
+- 
 
 ## Setup
 

@@ -11,4 +11,13 @@ Change in shape one will make a change in the other (view)
 See example in NumPy/copies_and_views.py
 - slicing an array creates a view
 
+------------------------------------------------------------
+Encapsulation: it is that things are protected inside of a class or object and cannot be easily manipulated by outside
+ - in python an underscore denotes a private member or method
+    __private_method__
+    _private_member
+
+Abstraction: a class that can be used as a base and then added to to better suit a situation or context. Parent could be an abstraction of the class Person
+
+Polymorphism: to have different methods for handling different types and to override other methods for specific classes
 
