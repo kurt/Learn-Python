@@ -58,6 +58,13 @@ class TestCase(unittest.TestCase):
         res = self.q.full()  
         self.assertEqual(res, True)
 
+# memory tests
+    def memTest(self):
+        q = Q.Queue(100)
+        print(sys.getsizeof(q))
+        q2 = Q.Queue(1)
+        print(sys.getsizeof(q2))
+
 
 if __name__ == "__main__":
     unittest.main()

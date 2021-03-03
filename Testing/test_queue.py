@@ -1,5 +1,5 @@
 import Queue as Q
-
+import sys
 
 def test1():
     q = Q.Queue(1)
@@ -45,7 +45,22 @@ def test2():
         print("Test 2 Failed - d")
     print("Test 2 OK!")
 
+def fill_queue(q):
+    for i in range(q.max):
+        q.enqueue(i)
+    return q
+ 
 
 # Call Tests
 test1()
 test2()
+q = Q.Queue(100)
+qb = fill_queue(q)
+q2 = Q.Queue(1)
+
+print("Q of 100 elems",sys.getsizeof(qb))
+print("Q of 1 elem",sys.getsizeof(q2))
+# print the elements of qb
+for i in range(qb.max):
+    print(qb.dequeue())
+
