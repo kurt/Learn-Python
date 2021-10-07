@@ -3,7 +3,7 @@ class Person:
         self.name=name
         self.lastname=lastname
     def print_person(self):
-        print(f"{self.name} {self.lastname}")
+        print("{self.name} {self.lastname}")
 
 
 class Employee(Person):
@@ -11,7 +11,7 @@ class Employee(Person):
         super().__init__(name,lastname)
         self.employee_id=employee_id
     def print_employee(self):
-        print(f"My name is: {self.name} {self.lastname}, employee number {self.employee_id}")
+        print("My name is: {self.name} {self.lastname}, employee number {self.employee_id}")
 
 steve=Employee("Steve", "Carrell", 1234)
 steve.print_employee()
