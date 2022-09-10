@@ -23,3 +23,5 @@ model = models.Sequential(name="DeepNN", layers=[
 ])
 
 model.summary()
+
+utils.plot_model(model, to_file='model.png', show_shapes=True, show_layer_names=True)
