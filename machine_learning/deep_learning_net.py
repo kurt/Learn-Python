@@ -64,7 +64,7 @@ training = model.fit(x=X, y=y, batch_size=32, epochs=100, shuffle=True, verbose=
 metrics = [k for k in training.history.keys() if ("loss" not in k) and ("val" not in k)]
 fig, ax = plt.subplots(nrows=1, ncols=2, sharey=True, figsize=(15,3))
 
-## training
+# training
 ax[0].set(title="Training")
 ax11 = ax[0].twinx()
 ax[0].plot(training.history['loss'], color='black')
@@ -75,7 +75,7 @@ for metric in metrics:
     ax11.set_ylabel("Score", color='steelblue')
 ax11.legend()
 
-## validation
+# validation
 ax[1].set(title="Validation")
 ax22 = ax[1].twinx()
 ax[1].plot(training.history['val_loss'], color='black')
@@ -85,3 +85,31 @@ for metric in metrics:
     ax22.plot(training.history['val_'+metric], label=metric)
     ax22.set_ylabel("Score", color="steelblue")
 plt.show()
+
+
+def explainer_shap(model, x_names, x_instance, x_train=None, task="classification",top=10):
+    if x_train is None:
+        explainer = shap.TreeExplainer(model)
+        shap_values = explainer.shap_values(x_instance)
+
+    else:
+        explainer = shap.DeepExplainer(model, data=x_train[:100])
+        shap_values = explainer.shap_values(x_instance.reshape(1,-2))[0].reshape(-1)
+
+    if task == "classification":
+        shap.decision_plot(explainer.expected_value, shap_values, link='logit', feature_order='importance',
+                           features=x_instance, feature_names=x_names, feature_display_range=slice(-1,-top-1,-1))
+    #regression
+    else:
+        shap.waterfall_plot(explainer.expected_value[0], shap_values,
+                            features=x_instance, feature_names=x_names, max_display=top)
+
+
+list_feature_names = ["Hi", "Bye"]
+i = 1
+explainer_shap(model,
+               x_names=list_feature_names,
+               x_instance=X[i],
+               x_train=X,
+               task="classification", #task="regression"
+               top=10)
